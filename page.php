@@ -1,5 +1,8 @@
 
-<?php get_header( ) ?>
+<?php get_header('wooslide'); ?>
+<div class="wraperr">
+<div class="prcent80 col-xxl-10 col-xl-4 col-lg-6 col-md-2 col-sm-6 col-6"> 
+
 <?php   
 if(have_posts(  )){
     while(have_posts(  )){
@@ -23,4 +26,10 @@ if(have_posts(  )){
 }
 
 ?>
+</div>
+<!-- <div class="prcent20"> -->
+<div class="prcent20 col-xxl-2 col-xl-8 col-lg-6 col-md-9 col-sm-6 col-6">
+<?php get_sidebar( ); ?>
+</div>
+</div>
 <?php get_footer(  ); ?>

@@ -1,13 +1,20 @@
-<?php get_header( ) ?>
+<?php get_header('noslide') ?>
+<div class="index-articles-and-sidebar">
+<!-- <div class="prcent80"> -->
+    <div class="prcent80 prcent80-1920 col-xxl-10 col-xl-4 col-lg-6 col-md-2 col-sm-6 col-6"> 
+        
 <?php   
 if(have_posts(  )){
     while(have_posts(  )){
+		echo '<div class="prcent100 col-xxl-12">'; 
         the_post();
-		echo '<div class="thumbnail-all">';
+        echo '<div class="thumbnail-single">';
 		the_post_thumbnail();
         echo '</div>';
         ?>
-          
+         
+
+		 
           <h2 class="post_title">
             <a href="">
                 <?php the_title(  ); ?>
@@ -18,12 +25,20 @@ if(have_posts(  )){
                 <?php //the_excerpt(  ); ?>
 
             </div>
+			</div><!-- class persent25 -->
 
         <?php
     }
 }
-
 ?>
+</div>
+
+<div class="prcent20 col-xxl-2 col-xl-8 col-lg-6 col-md-9 col-sm-6 col-6">
+<?php get_sidebar( ); ?>
+</div>
+</div><!-- index-articls-and-sidebar-->
+<hr>
+
 <?php get_footer(  ); ?>
 
 

@@ -1,8 +1,7 @@
-
 <?php get_header( ) ?>
 <div class="index-articles-and-sidebar">
 <!-- <div class="prcent80"> -->
-    <div class="prcent80 col-xxl-10 col-xl-4 col-lg-6 col-md-2 col-sm-6 col-6"> 
+    <div class="prcent80 prcent80-1920 col-xxl-10 col-xl-4 col-lg-6 col-md-2 col-sm-6 col-6"> 
         
         <?php  
 if(have_posts(  )){

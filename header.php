@@ -33,7 +33,6 @@
 	//));
     //$io=1;
 	//foreach( $recent_posts as $post_item ) : ?>
-
     <!-- <a class="abc-<?php echo $io; ?> abc-<?php echo $post_item['ID']; ?>" href="<?php echo get_permalink($post_item['ID']); ?>"> -->
         <?php //echo get_the_post_thumbnail($post_item['ID'], 'full'); ?>
         <!-- Assuming that the slider support captions  -->
