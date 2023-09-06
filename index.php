@@ -17,7 +17,33 @@ if(have_posts(  )){
     <a href="<?php the_permalink(); ?>">
                 <?php the_title(  ); ?>
             </a>
-          <h2>
+          </h2>
+
+          <?php
+			// echo '<div class="postedby-index">';
+			// echo '<b>';
+			// echo '<a href="';
+			//the_author_link();
+			// echo '"><span>الكاتب: ';
+			// the_author();
+			// the_author_posts_link();
+			// echo ' , </span></a>';
+			// echo '<a href="';
+			// the_permalink();
+			// echo '"><span> النشر في : ';
+			// the_date( get_option( 'date_format', 'F Y'));
+			// echo '</span></a>';
+			// echo '</div>';
+			// echo '<!-- END post by class -->';
+			
+			?>
+<div class="postedby-index">
+<a href="<?php permalink_link(  ); ?>"><span>الكاتب:<?php the_author_posts_link();?>  , </span></a>
+<a href="<?php the_permalink(); ?>"><span> النشر في :<?php the_date( get_option( 'date_format', 'F Y')); ?></span></a>
+</div>
+<!-- END post by class -->
+
+
             <div class="the_contents">
                 <?php //the_content(  ); ?>
                 <?php the_excerpt( ); ?>

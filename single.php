@@ -19,6 +19,40 @@ if(have_posts(  )){
             <a href="">
                 <?php the_title(  ); ?>
             </a>
+
+			<?php
+			// echo '<div class="postedby">';
+			// echo '<b>';
+			// echo '<a href="';
+			//the_author_link();
+			// echo '"><span>تم بواسطة الكاتب: ';
+			// the_author();
+			// the_author_posts_link();
+			// echo ' , </span></a>';
+			// echo '<a href="';
+			// the_permalink();
+			// echo '"><span> في تاريخ : ';
+			// the_date( get_option( 'date_format', 'F Y'));
+			// echo '</span></a>';
+			// echo '<a><span>  التصنيفات : ';
+			// the_category();
+			// echo '</span></a>&#160';	
+			// echo '<a><span>';
+			// the_tags();
+			echo "</span></a>";
+			// echo '</b>';
+			// echo '</div>';
+			// echo '<!-- END post by class -->';
+			
+			?>
+
+<div class="postedby">
+<a href="<?php permalink_link(  ); ?>"><span>الكاتب:<?php the_author_posts_link();?>  , </span></a>
+<a href="<?php the_permalink(); ?>"><span> النشر في :<?php the_date( get_option( 'date_format', 'F Y')); ?></span></a>
+<a><span>  التصنيفات :<?php the_category(); ?> </span></a>
+<a><span><?php the_tags(); ?> </span></a>
+</div>
+<!-- END post by class -->
           <h2>
             <div class="the_contents">
                 <?php the_content(  ); ?>
