@@ -1,5 +1,5 @@
 
-<?php get_header('wooslide'); ?>
+<?php get_header('noslide'); ?>
 <div class="wraperr">
 <div class="prcent80 col-xxl-10 col-xl-4 col-lg-6 col-md-2 col-sm-6 col-6"> 
 
