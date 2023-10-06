@@ -57,6 +57,12 @@ if(have_posts(  )){
             <div class="the_contents">
                 <?php the_content(  ); ?>
                 <?php //the_excerpt(  ); ?>
+				<?php
+// If comments are open or we have at least one comment, load up the comment template.
+// if ( comments_open() || get_comments_number() ) {
+	comments_template();
+// }
+				?>
 
             </div>
 			</div><!-- class persent25 -->
