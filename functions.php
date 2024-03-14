@@ -4,7 +4,7 @@
 
 //// زميلنا المطور رقم 3 سيقوم بإضافة الاكواد التالية للمراجعة 
 
-
+// المطور 4 سيقوم باضافة الكود الجديد الآن
 function register_nav_menu_main(){
 register_nav_menu( 'main_header_menu', 'القائمة الأساسية main' );
 }
