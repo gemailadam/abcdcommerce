@@ -2,7 +2,7 @@
 
 // user 1 at my team work for programming or developing new app or website
 
-// زميلنا المطور رقم 3 سيقوم بإضافة الاكواد التالية للمراجعة 
+//// زميلنا المطور رقم 3 سيقوم بإضافة الاكواد التالية للمراجعة 
 
 
 function register_nav_menu_main(){
